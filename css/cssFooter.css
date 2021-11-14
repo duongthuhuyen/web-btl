@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    font-family: 'NhacCuaTui',sans-serif;
+    line-height: 1.4;
+   
+    
+}
+.footer{
+  width: 100%;
+  margin: 0px auto;
+}
+
+a,li{
+    text-decoration: none;
+    color:rgba(0,0,0,0.5);
+    
+}
+a:hover{
+    color: #2daaed !important;
+}
+a:hover>span{
+  
+    color: rgba(0,0,0,0.5);
+}
+
+.t-nav ul{
+    padding: 0px;
+    margin: 0px;
+   
+}
+li{
+    list-style-type: none;
+    
+}
+.t-footer-container{
+    width: 85%;
+    margin: 0px auto;
+}
+span{
+    
+    padding-left: 0px;
+    line-height: 1;
+    vertical-align: text-bottom;
+}
+.t-title{
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color: rgba(0,0,0,0.88);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6;
+    padding: 0;
+    margin: 40px 0px 8px 0px;
+   
+}
+.t-list-navi-child{
+   display: flex;
+}
+.t-list-navi{
+   display: inline-block;
+  
+}
+ .t-navi{
+    width: 170.98px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.t-nav{
+    
+    margin-right: 48px;
+    width: 30%;
+}
+.t-nav-last{
+    
+}
+.t-top-keyword>a{
+    color: #2daaed;
+}
+.comunicate>a>img{
+    margin-right: 16px;
+}
+.app{
+    
+
+}
+.app>a>img{
+    width: 108px;
+    height: 32px;
+    margin-right: 16px;
+}
+.footer1{
+    display: flex;
+}
+.t-infor{
+    width: 786px;
+}
+.t-name{
+    
+}
+.t-detail >li{
+    list-style-type: circle;
+    list-style-position: inside;
+   
+}
+.t-name{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #909090;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0px 0px 8px 0px;
+    line-height: 1.4;
+}
+.t-boild{
+    color: #909090;
+    font-weight: bold;
+}
+.t-box-infor-company{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.t-box-copyright{
+    width: 100%;
+    margin: 0px auto;
+    background-color: /*linear-gradient(to right, #2f80ed 0%,#00aeef 100%)*/
+    #2f80ed;
+    padding-bottom: 20px;
+}
+
+.t-list-contact{
+    display: flex;
+}
+.t-contact-detail{
+    margin-top: 25px;
+    margin-right: 26px;
+}
+.t-contact-detail>a{
+    color: #ffffff;
+    font-size: 12px;
+    vertical-align:middle;
+}
+.t-txt-copyright{
+    color: #ffffff;
+    font-size: 12px;
+    vertical-align:middle;
+    margin-top: 25px;
+}
+.t-title-cooperation{
+    width: 100%;
+   
+    font-size: 14px;
+    color: rgba(0,0,0,0.88);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6;
+    padding: 0px;
+}
