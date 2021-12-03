@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333;
+    vertical-align: middle;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a:hover,
+ul>ul>li:first-child>a:hover {
+    color: #2daaed;
+}
+
+#headermenu {
+    width: 100vw;
+}
+
+#headermenu-box {
+    display: flex;
+    justify-content: center;
+    border-bottom: #dadada solid 1px;
+    align-items: center;
+}
+
+#menu_1>ul,
+#menu_2>ul {
+    display: inline-flex;
+    /* border: 1px solid #333; */
+}
+
+#menu_1>ul>li {
+    padding: 3px 9px;
+    /* border: 1px solid #333; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 16px;
+}
+
+#menu_1>ul>li>a {
+    line-height: 42px;
+    padding: 4px 0px;
+    /* color: #222222; */
+}
+
+.more-main-menu.new_header {
+    width: 21px;
+    height: 100%;
+}
+
+.more-main-menu.new_header::before {
+    content: '';
+    background: url('https://stc-id.nixcdn.com/v11/images/header_new/ic_more_new.png');
+    width: 21px;
+    height: 4px;
+    position: absolute;
+    top: 25px;
+    left: 5px;
+}
+
+.more-main-menu.new_header:hover::before {
+    background: url('https://stc-id.nixcdn.com/v11/images/header_new/ic_more_new_active.png');
+}
+
+#menu_1>ul>li>ul {
+    position: absolute;
+    /* width: 580px; */
+    padding-left: 30px;
+    /* display: inline-flex; */
+    display: none;
+    border: 1px solid #d9d9d9;
+    z-index: 999999;
+    box-shadow: 0 3px 8px rgba(3, 3, 3, 0.26);
+    top: 55px;
+}
+
+.column {
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.column>li {
+    padding: 5px 0px;
+}
+
+.column_2 {
+    width: 170px;
+}
+
+.column_1,
+.column_3 {
+    width: 130px;
+}
+
+.column_4 {
+    width: 100px;
+}
+
+ul>ul>li:first-child>a {
+    color: #222222;
+    line-height: 42px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#menu_1>ul>li:hover>ul {
+    display: inline-flex;
+}
+
+
+/* Menu 1 end */
+
+
+/* Start menu 2 */
+
+#box_search_quick {
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    border-radius: 4px;
+}
+
+.b-search {
+    border: none;
+    width: 32px;
+    height: 32px;
+    background: url(https://stc-id.nixcdn.com/v11/images/header_new/ic_search_icon_new.png) no-repeat;
+    background-size: 18px;
+    background-position: center center;
+}
+
+.inputSearch {
+    width: 160px;
+    height: 32px;
+    margin-left: 0px;
+    font-size: 14px;
+    color: rgba(136, 136, 136, 1);
+    border: 1px solid transparent;
+    background-color: transparent;
+    transition: border .25s linear, color .25s linear;
+}
+
+.inputSearch:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.wrapper-button-vip {
+    padding-right: 16px;
+}
+
+.button-upgrade-item {
+    background-color: transparent;
+    width: 28px;
+    height: 100%;
+    border-radius: 0px;
+    background: url(https://stc-id.nixcdn.com/v11/images/header_new/ic_store.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: 24px;
+    background-position: center center;
+    border: 0;
+}
+
+.button-upgrade-item:hover {
+    background: url(https://stc-id.nixcdn.com/v11/images/header_new/ic_store_hover.png) no-repeat;
+    background-size: 24px;
+    background-position: center center;
+    padding-top: 2px;
+}
+
+.btn-upload {
+    width: 28px;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 0px;
+    background: url(https://stc-id.nixcdn.com/v11/images/header_new/ic_upload.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: 28px;
+    background-position: center center;
+    border: 0;
+    display: block;
+    margin-right: 16px;
+}
+
+.btn-upload:hover {
+    border: 0;
+    background: url(https://stc-id.nixcdn.com/v11/images/header_new/ic_upload_hover.png) no-repeat;
+    background-size: 28px;
+    background-position: center center;
+}
+
+#box_user_login {
+    display: inline-flex;
+    align-items: center;
+}
+
+.profile-login {
+    cursor: pointer;
+    padding: 7px 16px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.profile-register {
+    cursor: pointer;
+    width: 80px;
+    height: 32px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-image: linear-gradient(45deg, #2f80ed 0%, #00aeef 100%);
+}

@@ -1,0 +1,42 @@
+* {
+    color: rgba(0, 0, 0, 0.712);
+}
+
+.content {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.menu_main_content {
+    width: 75%;
+}
+
+.row_menu_main_content {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.329);
+}
+
+.row_menu_main_content>div {
+    width: 20%;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.row_menu_main_content>ul {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row_menu_main_content>ul>li {
+    width: 25%;
+    padding: 10px 0px 7px;
+    font-size: 1.1rem;
+}
+
+.row_menu_main_content>ul>li:hover {
+    background-color: red;
+    color: white;
+}
