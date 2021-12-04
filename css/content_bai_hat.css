@@ -3,17 +3,22 @@
 }
 
 .content {
-    width: 80vw;
+    width: 82vw;
+    height: 800px;
     margin: 0 auto;
+    position: relative;
+    top: 57px;
+    /* background-color: aqua; */
 }
 
 .menu_main_content {
-    width: 75%;
+    width: 72%;
+    color: rgba(0, 0, 0, 0.747);
 }
 
 .row_menu_main_content {
     display: flex;
-    padding: 10px 0px;
+    padding: 7px 0px 5px;
     align-items: center;
     border-bottom: 1px solid rgba(153, 153, 153, 0.329);
 }
@@ -22,6 +27,51 @@
     width: 20%;
     font-size: 1.3rem;
     text-transform: uppercase;
+    font-weight: 900;
+    padding-left: 2%;
+}
+
+li {
+    position: relative;
+}
+
+.fc-while {
+    color: #222222 !important;
+    font-weight: 300 !important;
+}
+
+.row_menu_main_content>ul>:last-child ul {
+    display: none !important;
+}
+
+.row_menu_main_content>ul>:last-child ul>li {
+    padding: 2px;
+    font-size: 1.2rem;
+}
+
+.row_menu_main_content>ul>:last-child ul>li:hover {
+    color: #e74c3c !important;
+}
+
+.row_menu_main_content>ul>:last-child>a.more {
+    color: #999999 !important;
+}
+
+.row_menu_main_content>ul>:last-child>a.more:hover {
+    color: white !important;
+}
+
+.row_menu_main_content>ul>:last-child>a:hover ul {
+    display: block !important;
+    cursor: pointer;
+    position: absolute;
+    background-color: white;
+    z-index: 9998;
+    top: 31px;
+    width: 188px;
+    padding: 10px;
+    right: 70px;
+    box-shadow: 0 3px 8px rgba(3, 3, 3, 0.26);
 }
 
 .row_menu_main_content>ul {
@@ -32,11 +82,32 @@
 
 .row_menu_main_content>ul>li {
     width: 25%;
-    padding: 10px 0px 7px;
     font-size: 1.1rem;
+    padding-top: 7px !important;
 }
 
-.row_menu_main_content>ul>li:hover {
+.row_menu_main_content>ul>li>a {
+    padding: 7px 10px 7px 5px;
+    font-size: 1.2rem !important;
+    border-radius: 5px;
+}
+
+.row_menu_main_content>ul>li>a:hover {
     background-color: red;
-    color: white;
+    color: white !important;
+}
+
+.row_menu_main_content>ul>li>a:hover>span {
+    color: white !important;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.title-content>a {
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: #2daaed;
+    padding-top: 90px;
 }

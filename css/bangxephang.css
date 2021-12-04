@@ -1,0 +1,196 @@
+.boxbody{
+    margin: 0 auto;
+    width: 1300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+.boxbody1{
+	padding-right: 10px;
+	width: 70%;
+}
+
+.quocgia{
+    display: flex;
+    width: 100%;
+    background-color: lightgray;
+
+}
+.quocgia ul{
+    display: inline-flex;
+    padding-left: 20px;
+}
+.quocgia ul li{
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    padding:10px;
+}
+.quocgia ul li:hover{
+    color: #0689ba;
+    border-bottom: #1abc9c solid 2px;
+    cursor: pointer;
+}
+.nametitle{
+	color: #2582be;
+	font-size: 24px;
+	text-transform: uppercase;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+.titlev{
+	align-items: center;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+.baihatvideo{
+	margin: 0px;
+	display: flex;
+}
+#baihat{
+	background-color: #e74c3c;
+	font-size: 16px;
+	padding: 5px 15px;
+	color: white;
+	border-radius: 15px 0 0 15px;
+	border-right: 1px solid white;
+	cursor: pointer;
+}
+#video{
+	font-size: 16px;
+	padding: 5px 15px;
+	color: black;
+	border-radius: 0 15px 15px 0;
+}
+#video:hover{
+	background-color: #e74c3c;
+	color: white;
+	cursor: pointer;
+}
+.ndtitle{
+	font-size: 16px;
+	text-align: justify;
+	padding-bottom: 20px; 
+}
+.tuan{
+	background-color: #1abc9c;
+	display: flex;
+	padding: 8px;
+	justify-content: space-between;
+}
+.tuan div{
+	display: flex;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.tuan div span{
+	padding-right: 10px; 
+}
+.tuan div div{
+	padding-left:10px; 
+	font-weight: 300;
+}
+.tuan img{
+	width: 23px;
+}
+.hang{
+	display: flex;
+}
+.boxmusic{
+	display: flex;
+	border-bottom: 2px solid lightgray;
+	justify-content: space-between;
+}
+.headmusic{
+	display: flex;
+}
+.pic img{
+	padding: 10px;
+	width: 130px;
+}
+.hang ul li img{
+	width: 15px;
+}
+.hang ul{
+	padding: 23px 10px;
+	padding-top: 49px;
+}
+.picname{
+	padding-top: 48px;
+}
+
+#hangg{
+	padding: 20px;
+	padding-top: 45px;
+	color: red;
+	font-size: 30px;
+}
+.boxmusic:hover{
+	background-color: rgb(235,235,235);
+}
+.iconan{
+	display: none;
+	align-items: center;
+}
+.boxmusic:hover .iconan{
+	display: flex;
+}
+#traitim{
+	font-size:23px;
+	padding-left: 30px;
+	color: gray;
+}
+#traitim span:hover{
+	color: blue;
+	cursor: pointer;
+}
+#playmusic{
+	font-size:23px;
+	color: gray;
+}
+#playmusic span:hover{
+	cursor: pointer;
+	color: blue;
+}
+
+.boxbody2{
+	width: 30%;
+	padding-left: 10px;
+}
+.boxbody2 div ul li a img{
+	width: 100%;
+}
+.boxbody2 div ul li{
+	padding-top: 15px;
+}
+.boxbody2 div img{
+	width: 100%;
+}
+.boxbody2 .namecsp:hover .namecs{
+	display: block;
+	cursor: pointer;
+}
+.boxbody2 .namecsp:hover img{
+	filter:brightness(50%);
+	cursor: pointer;
+}
+.boxbody2 .namecs{
+	display: none;
+	position: relative;
+	top: -220px;
+	left: 140px;
+	font-size: 30px;
+	color: white;
+	height: 0px;
+}
+.haics{
+	display: flex;
+}
+.top100{
+	width: 100%;
+}
+

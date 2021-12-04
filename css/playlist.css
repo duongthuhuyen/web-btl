@@ -1,0 +1,112 @@
+.bodymid {
+    width: 85%;
+    margin: auto;
+}
+
+.hoverred .t-nav .t-list-navi ul li a {
+    padding: 5px;
+    color: black;
+    font-size: 15px;
+}
+
+.hoverred .t-nav .t-list-navi ul li a:hover {
+    border-radius: 8px;
+    background-color: red;
+    color: white !important;
+    font-weight: bold;
+}
+
+.hoverred .t-nav .t-list-navi ul li a:hover .material-icons {
+    background-color: red;
+    color: white;
+}
+
+#xemthem {
+    color: gray;
+}
+
+.bodymid .t-title {
+    margin: 0px;
+}
+
+.bodymid .hoverred {
+    display: flex;
+}
+
+.titleheadtag h1 {
+    font-size: 25px;
+    color: #2daaed;
+}
+
+.bodymid .t-nav {
+    border-right: 1px solid lightgray;
+}
+
+.nambox {
+    display: flex;
+}
+
+.motbox .anhnhac img {
+    /*display: block;*/
+    width: 90%;
+}
+
+.namenhac {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.motbox .namenhac a {
+    padding-top: 5px;
+    padding-bottom: 25px;
+    color: black;
+    font-size: 15px;
+}
+
+.play {
+    height: 0px;
+}
+
+.play img {
+    position: relative;
+    top: -145px;
+    left: 22%;
+    background-color: aqua;
+    display: none;
+    width: 100px;
+    z-index: 9999;
+}
+
+.motbox:hover .play img {
+    display: block;
+    cursor: pointer;
+}
+
+.motbox:hover .anhnhac img {
+    filter: brightness(70%);
+}
+
+.chuyentrang {
+    border-radius: 4px;
+    display: flex;
+    width: 100%;
+    background-color: lightgray;
+    justify-content: center;
+}
+
+.chuyentrang ul {
+    display: inline-flex;
+}
+
+.chuyentrang ul li {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    padding: 7px 15px;
+}
+
+.chuyentrang ul li:hover {
+    color: #e74c3c;
+    border-bottom: 2px solid #e74c3c;
+    cursor: pointer;
+}

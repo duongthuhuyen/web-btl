@@ -16,6 +16,9 @@ ul>ul>li:first-child>a:hover {
 
 #headermenu {
     width: 100vw;
+    position: fixed;
+    background-color: white;
+    z-index: 99999;
 }
 
 #headermenu-box {
@@ -42,10 +45,14 @@ ul>ul>li:first-child>a:hover {
     background-color: #ffffff;
 }
 
+ul.column>li>a {
+    color: #222222;
+}
+
 #menu_1>ul>li>a {
     line-height: 42px;
     padding: 4px 0px;
-    /* color: #222222; */
+    color: #222222;
 }
 
 .more-main-menu.new_header {
@@ -80,9 +87,14 @@ ul>ul>li:first-child>a:hover {
     background-color: #ffffff;
 }
 
+#menu_2 {
+    margin-left: 30px;
+}
+
 .column {
     line-height: 1.4;
     font-size: 18px;
+    width: 150px;
 }
 
 .column>li {
