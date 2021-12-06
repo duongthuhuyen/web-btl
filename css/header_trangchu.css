@@ -9,7 +9,7 @@ header * {
     list-style-type: none;
 }
 
-header a:hover,
+#headermenu a:hover,
 header ul>ul>li:first-child>a:hover {
     color: #2daaed;
 }

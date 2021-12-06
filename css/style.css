@@ -858,5 +858,9 @@ h3>a {
 }
 
 .wrap {
-    margin-bottom: 200px;
+    margin-bottom: 250px;
+}
+/* Bổ xung*/
+.box .fram_select .tile_box_key a{
+    font-size: 26px;
 }
