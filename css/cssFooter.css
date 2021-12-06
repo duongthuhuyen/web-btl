@@ -151,8 +151,8 @@ span {
 .t-box-copyright {
     width: 100%;
     margin: 0px auto;
-    background-color: /*linear-gradient(to right, #2f80ed 0%,#00aeef 100%)*/
-    #2f80ed;
+    background-image: linear-gradient(to right, rgb(47, 128, 237) 0%, rgb(0, 174, 239) 100%);
+    ;
     padding-bottom: 20px;
 }
 
@@ -231,4 +231,49 @@ div.adds>a>div {
     top: 40px;
     color: #fff;
     padding: 10px;
+}
+
+.t-box-list-cooperation {
+    width: 85%;
+    margin: 0px auto;
+}
+
+.t-list-cooperation button {
+    cursor: pointer;
+}
+
+.t-list-cooperation .slick-prev {
+    position: absolute;
+    top: 23px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 2;
+    left: 0px;
+    width: 56px;
+    height: 56px;
+    -webkit-border-radius: 4px;
+}
+
+.t-list-cooperation .slick-next {
+    position: absolute;
+    top: 23px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 2;
+    right: 0px;
+    width: 56px;
+    height: 56px;
+}
+
+.t-box-list-cooperation button span {
+    color: #909090;
+}
+
+.t-list-cooperation {
+    background-color: #efefef;
+    padding: 10px 0px 20px 0px;
 }

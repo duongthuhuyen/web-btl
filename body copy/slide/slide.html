@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .content-slider-slick {
+            width: 85%;
+            margin: 0px auto;
+        }
+
+        /* li {
+            width: 500px;
+            height: 281px;
+            background: #333;
+            display: inline-block;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            overflow: hidden;
+        }*/
+        .content-slider-slick img {
+            width: 100%;
+        }
+
+        .content-slider-slick .btn{
+            width: 50px;
+            height: 100px;
+            cursor: pointer;
+            background-color: blueviolet;
+
+        }
+
+
+        .content-slider-slick .items {
+            position: absolute;
+        }
+
+        .main-pos {
+            margin-left: 10em !important;
+            z-index: 3000;
+            /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
+        }
+
+        .left-pos {
+            opacity: .3;
+            margin-left: -6.5em !important;
+            z-index: 1000;
+            -webkit-transform: scale(.75);
+            -moz-transform: scale(.75);
+            transform: scale(.75);
+        }
+
+        .back-pos {
+            margin-left: 6em !important;
+            opacity: .05;
+            -webkit-transform: scale(.5);
+            -moz-transform: scale(.5);
+            transform: scale(.5);
+        }
+
+        .right-pos {
+            opacity: .3;
+            margin-left: 29em !important;
+            z-index: 1000;
+            -webkit-transform: scale(.75);
+            -moz-transform: scale(.75);
+            transform: scale(.75);
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="content-slider-slick">
+            <ul class="carousel">
+                <li class="items main-pos" id="1">
+                    <a href="http://">
+                        <img src="https://avatar-ex-swe.nixcdn.com/slideshow/2021/12/03/c/1/5/a/1638501149821_org.jpg"
+                            alt="">
+                    </a>
+                </li>
+                <li class="items right-pos" id="2">
+                    <a href="http://">
+                        <img
+                            src="	https://avatar-ex-swe.nixcdn.com/slideshow/2021/12/02/5/6/e/5/1638419241025_org.jpg" />
+                    </a>
+                </li>
+                <li class="items back-pos" id="3">
+                    <a href="http://">
+                        <img src="https://avatar-ex-swe.nixcdn.com/slideshow/2021/12/03/c/1/5/a/1638501149821_org.jpg"
+                            alt="">
+                    </a>
+                </li>
+                <li class="items back-pos" id="4">
+                    <a href="http://">
+                        <img
+                            src="	https://avatar-ex-swe.nixcdn.com/slideshow/2021/12/02/5/6/e/5/1638419241025_org.jpg" />
+                    </a>
+                </li>
+                <li class="items back-pos" id="5">
+                    <a href="http://">
+                        <img
+                            src="	https://avatar-ex-swe.nixcdn.com/slideshow/2021/12/02/5/6/e/5/1638419241025_org.jpg" />
+                    </a>
+                </li>
+                <li class="items back-pos" id="6">
+                    <a href="http://">
+                        <img
+                            src="	https://avatar-ex-swe.nixcdn.com/slideshow/2021/12/02/5/6/e/5/1638419241025_org.jpg" />
+                    </a>
+                </li>
+                <li class="items left-pos" id="7"><img <a href="http://">
+                    <img src="	https://avatar-ex-swe.nixcdn.com/slideshow/2021/12/02/5/6/e/5/1638419241025_org.jpg" />
+                    </a>
+                </li>
+            </ul>
+            <div class="btn">
+                <span class='material-icons' id="prev">arrow_back_ios</span>
+            </div>
+            <div class="btn">
+                <span class='material-icons' id="next">arrow_forward_ios</span>
+            </div>
+
+
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        //slideshow style interval
+        var autoSwap = setInterval(swap, 3500);
+
+        //pause slideshow and reinstantiate on mouseout
+        $('ul, span').hover(
+            function () {
+                clearInterval(autoSwap);
+            },
+            function () {
+                autoSwap = setInterval(swap, 3500);
+            });
+
+        //global variables
+        var items = [];
+        var startItem = 1;
+        var position = 0;
+        var itemCount = $('.carousel li.items').length;
+        var leftpos = itemCount;
+        var resetCount = itemCount;
+
+        //unused: gather text inside items class
+        $('li.items').each(function (index) {
+            items[index] = $(this).text();
+        });
+
+        //swap images function
+        function swap(action) {
+            var direction = action;
+
+            //moving carousel backwards
+            if (direction == 'counter-clockwise') {
+                var leftitem = $('.left-pos').attr('id') - 1;
+                if (leftitem == 0) {
+                    leftitem = itemCount;
+                }
+
+                $('.right-pos').removeClass('right-pos').addClass('back-pos');
+                $('.main-pos').removeClass('main-pos').addClass('right-pos');
+                $('.left-pos').removeClass('left-pos').addClass('main-pos');
+                $('#' + leftitem + '').removeClass('back-pos').addClass('left-pos');
+
+                startItem--;
+                if (startItem < 1) {
+                    startItem = itemCount;
+                }
+            }
+
+            //moving carousel forward
+            if (direction == 'clockwise' || direction == '' || direction == null) {
+                function pos(positionvalue) {
+                    if (positionvalue != 'leftposition') {
+                        //increment image list id
+                        position++;
+
+                        //if final result is greater than image count, reset position.
+                        if ((startItem + position) > resetCount) {
+                            position = 1 - startItem;
+                        }
+                    }
+
+                    //setting the left positioned item
+                    if (positionvalue == 'leftposition') {
+                        //left positioned image should always be one left than main positioned image.
+                        position = startItem - 1;
+
+                        //reset last image in list to left position if first image is in main position
+                        if (position < 1) {
+                            position = itemCount;
+                        }
+                    }
+
+                    return position;
+                }
+
+                $('#' + startItem + '').removeClass('main-pos').addClass('left-pos');
+                $('#' + (startItem + pos()) + '').removeClass('right-pos').addClass('main-pos');
+                $('#' + (startItem + pos()) + '').removeClass('back-pos').addClass('right-pos');
+                $('#' + pos('leftposition') + '').removeClass('left-pos').addClass('back-pos');
+
+                startItem++;
+                position = 0;
+                if (startItem > itemCount) {
+                    startItem = 1;
+                }
+            }
+        }
+
+        //next button click function
+        $('#next').click(function () {
+            swap('clockwise');
+        });
+
+        //prev button click function
+        $('#prev').click(function () {
+            swap('counter-clockwise');
+        });
+
+        //if any visible items are clicked
+        $('li').click(function () {
+            if ($(this).attr('class') == 'items left-pos') {
+                swap('counter-clockwise');
+            }
+            else {
+                swap('clockwise');
+            }
+        });
+    </script>
+</body>
+
+</html>
