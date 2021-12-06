@@ -7,24 +7,38 @@
 }
 .boxbody1{
 	padding-right: 10px;
-	width: 70%;
+	width: 90%;
 }
-
+#headermenu-box{
+	margin: 20px;
+	margin-left: -135px;
+}
 .quocgia{
     display: flex;
     width: 100%;
     background-color: lightgray;
-
+	padding-top: 70px;
+	padding-bottom: 10px;
 }
 .quocgia ul{
     display: inline-flex;
     padding-left: 20px;
+	margin: 0;
+	height: 40px;
+	padding-bottom: 2px.;
 }
 .quocgia ul li{
     color: black;
     font-size: 14px;
     text-align: center;
-    padding:10px;
+    padding:20px;
+	height: 40px;
+	padding: 20px;
+	margin-left: 20px;
+	transition: all 0.5s;
+}
+.quocgia ul li:first-child{
+	margin-left: 0;
 }
 .quocgia ul li:hover{
     color: #0689ba;
@@ -32,22 +46,30 @@
     cursor: pointer;
 }
 .nametitle{
-	color: #2582be;
+	color: #5ba5d6;
 	font-size: 24px;
 	text-transform: uppercase;
+	padding-top: 80px;
+	padding-bottom: 10px;
+}
+.nametitle-left{
+	color: #5391bb;
+	font-size: 26px;
+	text-transform: uppercase;
 	padding-top: 20px;
-	padding-bottom: 20px;
-	
+	padding-bottom: 10px;
 }
 .titlev{
 	align-items: center;
 	width: 100%;
 	display: inline-flex;
 	justify-content: space-between;
+	padding-top: 20px;
 }
 .baihatvideo{
 	margin: 0px;
 	display: flex;
+	padding-top: 5px;
 }
 #baihat{
 	background-color: #e74c3c;
