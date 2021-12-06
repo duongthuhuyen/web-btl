@@ -4,16 +4,18 @@
 
 .content {
     width: 82vw;
-    height: 800px;
+    /* height: 800px; */
     margin: 0 auto;
     position: relative;
     top: 57px;
     /* background-color: aqua; */
 }
 
-.menu_main_content {
+.menu_main_content,
+.box-songs {
     width: 72%;
     color: rgba(0, 0, 0, 0.747);
+    /* border: 1px solid red; */
 }
 
 .row_menu_main_content {
@@ -109,5 +111,129 @@ li {
     font-size: 1.9rem;
     font-weight: 500;
     color: #2daaed;
-    padding-top: 90px;
+    padding: 2px 0px 0px;
+    position: relative;
+}
+
+.song {
+    border-top: 1px solid #ececec;
+    padding: 5px 0px;
+    display: flex;
+}
+
+.box-songs {
+    position: relative;
+    margin: 10px 0px;
+}
+
+.song>.song-header {
+    width: 55%;
+    display: flex;
+}
+
+.song-header>div {
+    width: 60px;
+    height: 60px;
+}
+
+.song-header>div img {
+    width: 60px;
+    height: 60px;
+}
+
+div.song-header>:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.song-header>div>ul a {
+    padding-left: 20px;
+    width: 400px;
+    display: inline-block;
+    transition: all 0.2s linear;
+}
+
+.song-header>div>ul>li:first-child>a {
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.song-header>div>ul>li:last-child>a {
+    font-size: 12px;
+}
+
+.song-tail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.song-tail div {
+    display: inline;
+    /* text-align: center; */
+    vertical-align: middle;
+}
+
+div.vien_>div {
+    padding: 3px 8px;
+    font-size: 11px;
+    color: white;
+    border-radius: 3px;
+}
+
+div.vien_>:first-child {
+    background-color: #ccc;
+    margin-right: 5px;
+}
+
+div.vien_>:last-child {
+    background-color: #00adef;
+}
+
+div.song-tail>:first-child {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+div.song-tail>div>:last-child>div>img {
+    height: 10px;
+    margin-bottom: 3px;
+}
+
+div.song-tail span {
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.chuyentrang {
+    border-radius: 4px;
+    display: flex;
+    width: 100%;
+    background-color: #e5e5e5;
+    justify-content: center;
+}
+
+.chuyentrang ul {
+    display: inline-flex;
+}
+
+.chuyentrang ul li {
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding: 7px 15px;
+}
+
+.chuyentrang ul li:hover {
+    color: #e74c3c;
+    border-bottom: 2px solid #e74c3c;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    top: 90px;
+    background-color: #f5f5f5;
 }

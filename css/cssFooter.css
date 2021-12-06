@@ -15,6 +15,14 @@ footer {
     margin: 0px auto;
 }
 
+.t-contact-detail>a>span {
+    color: white;
+}
+
+.t-contact-detail>a:hover>span {
+    color: #2daaed;
+}
+
 a,
 li {
     text-decoration: none;
@@ -28,6 +36,10 @@ a:hover {
 
 a:hover>span {
     color: rgba(0, 0, 0, 0.5);
+}
+
+a:hover>span.blue {
+    color: #2daaed;
 }
 
 .t-nav ul {
@@ -174,4 +186,49 @@ span {
     text-transform: uppercase;
     line-height: 1.6;
     padding: 0px;
+}
+
+div.adds {
+    width: 41px;
+    background-color: #2daaed;
+    height: 160px;
+    bottom: 212px;
+    position: fixed;
+    right: 0px;
+}
+
+div.adds>ul {
+    width: 31px;
+    height: 18px;
+    margin: 10px 5px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+div.adds>ul>a>li {
+    width: 10px;
+    height: 10px;
+    background-color: #2daaed;
+    border-radius: 5px;
+}
+
+div.adds>ul>:first-child>li {
+    background-color: #fff;
+}
+
+div.adds>a>div {
+    position: relative;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    width: 130px;
+    right: 45px;
+    top: 40px;
+    color: #fff;
+    padding: 10px;
 }
