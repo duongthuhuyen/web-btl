@@ -1,0 +1,29 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.t-list-cooperation{
+  width: 100%;
+  background-color: #efefef;
+}
+.t-footer-container{
+  width: 85%;
+  margin: 0px auto;
+}
+.t-box-list-cooperation{
+
+}
+.owl-nav.disabled>div{
+  width: 50px;
+  background-color: red;
+  height: 50px;
+
+}
+.slider{
+  display: flex;
+}
+.item{
+  width: 500px;
+  background-color: aqua;
+}
