@@ -8,12 +8,21 @@
     margin: 0 auto;
     position: relative;
     top: 57px;
+    display: flex;
     /* background-color: aqua; */
+}
+
+.main-content {
+    width: 72%;
+}
+
+.box-right {
+    width: 28%;
 }
 
 .menu_main_content,
 .box-songs {
-    width: 72%;
+    width: 100%;
     color: rgba(0, 0, 0, 0.747);
     /* border: 1px solid red; */
 }
