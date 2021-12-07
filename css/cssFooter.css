@@ -151,8 +151,9 @@ li {
 /* >>>>>>> 6b64b4dde99baa1153581291e99f358078f84099 */
     width: 100%;
     margin: 0px auto;
-    background-color: /*linear-gradient(to right, #2f80ed 0%,#00aeef 100%)*/
-    #2f80ed;
+    /* background-color: /*linear-gradient(to right, #2f80ed 0%,#00aeef 100%)*/
+    /* #2f80ed; */ 
+    background-image: linear-gradient(to right, rgb(47, 128, 237) 0%, rgb(0, 174, 239) 100%);
     padding-bottom: 20px;
 }
 

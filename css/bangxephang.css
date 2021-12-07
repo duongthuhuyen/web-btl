@@ -10,14 +10,12 @@
 	width: 90%;
 }
 #headermenu-box{
-	margin: 20px;
 	margin-left: -135px;
 }
 .quocgia{
     display: flex;
     width: 100%;
     background-color: lightgray;
-	padding-top: 70px;
 	padding-bottom: 10px;
 }
 .quocgia ul{
@@ -25,7 +23,7 @@
     padding-left: 20px;
 	margin: 0;
 	height: 40px;
-	padding-bottom: 2px.;
+	padding-bottom: 2px;
 }
 .quocgia ul li{
     color: black;
@@ -49,7 +47,7 @@
 	color: #5ba5d6;
 	font-size: 24px;
 	text-transform: uppercase;
-	padding-top: 80px;
+	/* padding-top: 80px; */
 	padding-bottom: 10px;
 }
 .nametitle-left{
