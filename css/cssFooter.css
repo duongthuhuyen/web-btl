@@ -19,6 +19,7 @@ li {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
 }
+/* <<<<<<< HEAD */
 
 .t-footer-container a:hover {
     color: #2daaed !important;
@@ -26,7 +27,16 @@ li {
 
 .t-footer-container a:hover>span {
     color: rgba(0, 0, 0, 0.5);
+/* =======
+.footer a:hover{
+    color: #2daaed !important;
 }
+.footer a:hover>span{
+  
+    color: rgba(0,0,0,0.5);
+>>>>>>> 6b64b4dde99baa1153581291e99f358078f84099
+*/
+} 
 
 .t-nav ul {
     padding: 0px;
@@ -133,8 +143,12 @@ li {
     align-items: center;
     margin-bottom: 20px;
 }
+/* <<<<<<< HEAD
 
 .t-footer-container .t-box-copyright {
+======= */
+.footer .t-box-copyright{
+/* >>>>>>> 6b64b4dde99baa1153581291e99f358078f84099 */
     width: 100%;
     margin: 0px auto;
     background-color: /*linear-gradient(to right, #2f80ed 0%,#00aeef 100%)*/
