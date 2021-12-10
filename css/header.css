@@ -55,12 +55,12 @@ ul.column>li>a {
     color: #222222;
 }
 
-.more-main-menu.new_header {
+.more-main-menu.n_header_ {
     width: 21px;
     height: 100%;
 }
 
-.more-main-menu.new_header::before {
+.more-main-menu.n_header_::before {
     content: '';
     background: url('https://stc-id.nixcdn.com/v11/images/header_new/ic_more_new.png');
     width: 21px;
@@ -70,7 +70,7 @@ ul.column>li>a {
     left: 5px;
 }
 
-.more-main-menu.new_header:hover::before {
+.more-main-menu.n_header_:hover::before {
     background: url('https://stc-id.nixcdn.com/v11/images/header_new/ic_more_new_active.png');
 }
 
@@ -131,10 +131,21 @@ ul>ul>li:first-child>a {
 
 /* Start menu 2 */
 
-#box_search_quick {
-    background-color: rgba(0, 0, 0, 0.05);
+#b_search_>div{
+    background-color: rgba(0, 0, 0, 0.712);
     margin-right: 16px;
     border-radius: 4px;
+    border-width: 0px;
+    
+}
+
+#f_search_{
+    border: none;
+    margin-right: 10px;
+}
+
+#btnSearch, #txtSearch{
+    background-color: #f2f2f2;
 }
 
 .b-search {
@@ -162,7 +173,7 @@ ul>ul>li:first-child>a {
     border-color: transparent;
 }
 
-.wrapper-button-vip {
+.bt_vip_ {
     padding-right: 16px;
 }
 
@@ -210,18 +221,18 @@ ul>ul>li:first-child>a {
     background-position: center center;
 }
 
-#box_user_login {
+#box-user_lg {
     display: inline-flex;
     align-items: center;
 }
 
-.profile-login {
+.p_lg {
     cursor: pointer;
     padding: 7px 16px;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.profile-register {
+.p_rg_ {
     cursor: pointer;
     width: 80px;
     height: 32px;

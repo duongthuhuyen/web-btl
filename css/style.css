@@ -13,6 +13,14 @@
     justify-content: space-between;
 }
 
+#prev, #next{
+    opacity: 0.01;
+}
+
+#prev:hover, #next:hover{
+    opacity: 1 !important;
+}
+
 .box-left {
     width: 70%;
 }

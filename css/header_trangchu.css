@@ -55,12 +55,12 @@ header ul.column>li>a {
     color: #222222;
 }
 
-header .more-main-menu.new_header {
+header .more-main-menu.n_header_ {
     width: 21px;
     height: 100%;
 }
 
-header .more-main-menu.new_header::before {
+header .more-main-menu.n_header_::before {
     content: '';
     background: url('https://stc-id.nixcdn.com/v11/images/header_new/ic_more_new.png');
     width: 21px;
@@ -70,7 +70,7 @@ header .more-main-menu.new_header::before {
     left: 5px;
 }
 
-header .more-main-menu.new_header:hover::before {
+header .more-main-menu.n_header_:hover::before {
     background: url('https://stc-id.nixcdn.com/v11/images/header_new/ic_more_new_active.png');
 }
 
@@ -131,11 +131,20 @@ header ul>ul>li:first-child>a {
 
 /* Start menu 2 */
 
-#box_search_quick {
+#b_search_ {
     background-color: rgba(0, 0, 0, 0.05);
     margin-right: 16px;
     border-radius: 4px;
 }
+#btnSearch, #txtSearch{
+    background-color: #f2f2f2;
+}
+
+#f_search_{
+    border: none;
+    margin-right: 10px;
+}
+
 
 header .b-search {
     border: none;
@@ -162,7 +171,7 @@ header .inputSearch:focus {
     border-color: transparent;
 }
 
-header .wrapper-button-vip {
+header .bt_vip_ {
     padding-right: 16px;
 }
 
@@ -210,18 +219,18 @@ header .btn-upload:hover {
     background-position: center center;
 }
 
-#box_user_login {
+#box-user_lg {
     display: inline-flex;
     align-items: center;
 }
 
-header .profile-login {
+header .p_lg {
     cursor: pointer;
     padding: 7px 16px;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-header .profile-register {
+header .p_rg_ {
     cursor: pointer;
     width: 80px;
     height: 32px;

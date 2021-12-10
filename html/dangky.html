@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+
+    <link rel="stylesheet" href="../css/dangky.css">
+</head>
+<div>
+
+    <script>
+        function re_com(id, a, b){
+            if(document.querySelector('#'+id).value==="" || document.querySelector('#'+id).value.length<6){
+                document.querySelector('#'+id).style.backgroundColor = "#ffeaea";
+                document.querySelector('#'+id).style.borderColor = "#ef0000";
+                document.querySelectorAll(".goi_y")[a].style.display = "block";
+                document.querySelectorAll(".goi_y")[b].style.display = "block";
+            }else{
+                document.querySelector('#'+id).style.backgroundColor = "#ffffff";
+                document.querySelector('#'+id).style.borderColor = "#aaaaaa";
+                document.querySelectorAll(".goi_y")[a].style.display = "none";
+                document.querySelectorAll(".goi_y")[b].style.display = "none";
+            }
+        }
+    </script>
+
+    <div class="register-nct">
+        <div class="light_rg"></div>
+        <div class="box_register">
+            <div class="title_box_register">
+                <div><a href="">Đăng ký</a></div>
+                <div class="close_rg">X</div>
+            </div>
+            <div class="content_register">
+                <div>
+                    <form action="">
+                        <div class="hint_">
+                            Những thông tin có đánh dấu (<span style="color: #e74c3c;">*</span>) là bắt buộc nhập.
+                        </div>
+                        <div>
+                            <div class="label_register">
+                                <div><label href="" >Tên đăng nhập <span style="color: #e74c3c;">*</span></label>
+                                    <p class="goi_y">&nbsp;</p>
+                                </div>
+                                <div><label href="">Mật khẩu<span style="color: #e74c3c;">*</span></label>
+                                    <p class="goi_y">&nbsp;</p>
+                                </div>
+                                <div><label href="" >Nhập lại mật khẩu <span style="color: #e74c3c;">*</span></label>
+                                    <p class="goi_y">&nbsp;</p>
+                                </div>
+                                <div><label href="">Email<span style="color: #e74c3c;">*</span></label>
+                                    <p class="goi_y">&nbsp;</p>
+                                </div>
+                                <div><label href="">Mã xác nhận<span style="color: #e74c3c;">*</span></label></div>
+                            </div>
+                            <div>
+                                <div class="user_name_rg">
+                                    <input type="text" id="us_rg" flag="in_rg" onblur="re_com('us_rg', 0, 4);" >
+                                    <p class="goi_y">Tên tài khoản tối thiểu 6 ký tự.</p>
+                                </div>
+                                <div class="pass_log">
+                                    <input type="password" id="pass_rg" flag="in_rg" onblur="re_com('pass_rg', 1, 5);">
+                                    <p class="goi_y">Mật khẩu tối thiểu 6 kí tự.</p>
+                                </div>
+                                <div class="confirm_pass">
+                                    <input type="password" id="cf_pass" flag="in_rg" onblur="re_com('cf_pass', 2, 6);">
+                                    <p class="goi_y">Mật khẩu nhập lại không thể rỗng.</p>
+                                </div>
+                                <div class="email_">
+                                    <input type="text" id="em_" flag="in_rg" onblur="re_com('em_', 3, 7);">
+                                    <p class="goi_y">Email không hợp lệ.</p>
+                                </div>
+                                <div class="pass_rg">
+                                    <div class="captcha_">
+                                        <label for="">
+                                            <input type="checkbox"  name="re_cap" id="re_cap">
+                                            <label for="re_cap">Tôi không phải là người máy</label>
+                                            <script> 
+                                                document.querySelectorAll("input[name='re_cap']")[0].checked = false;
+                                            </script>
+                                        </label>
+                                        <label>
+                                            <img src="../image/recaptcha.png" alt="">
+                                            <p><a href="">Bảo mật</a> - <a href="">Điều khoản</a></p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="check_dk_">
+                                    <div>
+                                        <input type="checkbox"  name="nho_dk_" id="nho_dk_">
+                                        <script> 
+                                            document.querySelectorAll("input[id='nho_dk_']")[0].checked = true;
+                                        </script>
+                                        <label for="nho_dk_"  style="cursor: pointer; padding-left: 3px; font-size: 13px; font-weight: 500; color: rgba(0, 0, 0, 0.795);">Tôi đã đọc và đồng ý các điều kiện</label>
+                                    </div>
+                                    <div>
+                                        <a href="" style="color: #0689ba; font-size: 13px; font-weight: 500; ">Thỏa thuận sử dụng</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Đăng ký mới" class="rg_">
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </form>
+                    <div class="register_">
+                        <div>Bạn đã có tài khoản NCT ID?</div>
+                        <div>
+                            <a href="">
+                                <input type="button" value="ĐĂNG NHẬP NGAY" id="dangnhap_">
+                            </a>                        
+                        </div>
+                        <div>
+                            <span></span> &ensp;Hoặc &ensp;<span></span>
+                        </div>
+                        <a href="" class="log_fb">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg" alt="">
+                            <div > Đăng nhập qua Facebook </div>
+                        </a>
+                        <a href="" class="log_google">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Google_plus_icon_%282013-2015%29.png" alt="">
+                            <div > Đăng nhập qua Google + </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // document.querySelector("div.p_rg_").onclick = function(){
+            //     document.querySelector("div.register-nct").style.display = 'block';
+            // }
+            document.querySelector(".light_rg").onclick = function(){
+                document.querySelector("div.register-nct").style.display = 'none';
+            }
+            document.querySelector(".close_rg").onclick = function(){
+                document.querySelector("div.register-nct").style.display = 'none';
+            }
+        </script>
+    
+    </div>
+    
+</div>
+</html>

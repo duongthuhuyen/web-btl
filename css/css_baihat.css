@@ -332,7 +332,7 @@ div.btn_tab_select>a:hover {
     font-size: 20px;
     color: white;
     bottom: 0px;
-    padding: 3px 0px;
+    padding: 7px 0px;
     width: 34px;
     text-align: center;
     background-color: #e74c3c;
@@ -354,6 +354,14 @@ div.btn_tab_select>a:hover {
     text-align: center;
     margin-right: 10px;
     vertical-align: bottom;
+}
+
+.playmusic>span:hover{
+    color: #2daaed !important;
+}
+
+.traitim>span:hover{
+    color: #2daaed !important;
 }
 
 div.singer_>:first-child {

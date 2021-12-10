@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+
+    <link rel="stylesheet" href="../css/css_dangnhap.css">
+</head>
+<body>
+
+    <div class="login-nct">
+        <div class="box_">
+            <div class="title_box_">
+                <div><a href="">Đăng nhập</a></div>
+                <div class="close_">X</div>
+            </div>
+            <div class="content_login">
+                <div>
+                    <form action="">
+                        <div class="hint_">
+                            Những thông tin có đánh dấu (<span style="color: #e74c3c;">*</span>) là bắt buộc nhập.
+                        </div>
+                        <div>
+                            <div class="label_">
+                                <div><a href="">Tên đăng nhập <span style="color: #e74c3c;">*</span></a></div>
+                                <div><a href="">Mật khẩu<span style="color: #e74c3c;">*</span></a></div>
+                            </div>
+                            <div>
+                                <div class="user_name_lg">
+                                    <input type="text" id="us_lg">
+                                </div>
+                                <div class="pass_lg">
+                                    <input type="text" id="pass_lg">
+                                </div>
+                                <div class="check_pass_">
+                                    <div>
+                                        <input type="checkbox"  name="nho_pass" id="nho_pass">
+                                        <script> 
+                                        document.querySelectorAll("input[type='checkbox']")[0].checked = true;
+                                        </script>
+                                        <label for="nho_pass"  style="cursor: pointer; padding-left: 3px; font-weight: 200; color: rgba(0, 0, 0, 0.856);">Nhớ mật khẩu</label>
+                                    </div>
+                                    <div>
+                                        <a href="" style="color: #0689ba;">Quên mật khẩu ?</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Đăng nhập" class="lg_">
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </form>
+                    <div class="register_">
+                        <div>Bạn chưa có tài khoản NCT ID?</div>
+                        <div>
+                            <a href="">
+                                <input type="button" value="ĐĂNG KÍ NGAY" id="dangky_">
+                            </a>                        
+                        </div>
+                        <div>
+                            <span></span> &ensp;Hoặc &ensp;<span></span>
+                        </div>
+                        <a href="" class="log_fb">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg" alt="">
+                            <div > Đăng nhập qua Facebook </div>
+                        </a>
+                        <a href="" class="log_google">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Google_plus_icon_%282013-2015%29.png" alt="">
+                            <div > Đăng nhập qua Google + </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NhacCuaTui - Nghe tải nhạc MP3</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/cssFooter.css">
+    <link rel="stylesheet" href="../css/css_footer.css">
     <link rel="stylesheet" href="../css/header_trangchu.css">
+    <link rel="stylesheet" href="../css/css_dangnhap.css">
+    <link rel="stylesheet" href="../css/dangky.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
@@ -22,7 +24,7 @@
                 <div id="menu_1">
                     <ul>
                         <li id="icon_menu_logo">
-                            <a class="logo new_header active" title="Nghe Nhạc MP3 Online 320kps mới nhất"
+                            <a class="logo n_header_ active" title="Nghe Nhạc MP3 Online 320kps mới nhất"
                                 alt="Nghe Nhac MP3 Online 320kps moi nhat"
                                 href="http://demo-nhaccuatui.herokuapp.com/html/trangchu.html">
                                 <img src="https://stc-id.nixcdn.com/v11/images/header_new/logo_new.png" alt="">
@@ -78,7 +80,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a rel="follow" href="http://demo-nhaccuatui.herokuapp.com/html/tuyentapplaylist.html"
+                            <a rel="follow" href=" "
                                 title="Playlist">Playlist</a>
                             <ul id="songs-playlist">
                                 <ul class="column column_1">
@@ -276,7 +278,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a rel="follow" title="Khác" class="more-main-menu new_header"></a>
+                            <a rel="follow" title="Khác" class="more-main-menu n_header_"></a>
                             <ul>
                                 <ul class="column">
                                     <li></li>
@@ -292,26 +294,25 @@
 
                 <div id="menu_2">
                     <ul>
-                        <li id="box_search_quick" class="box_search new_header active-search">
-                            <form id="formSearchQuick" action="">
-                                <div class="boxSeach_action ">
-                                    <input id="btnSearch" type="submit" class="b-search" value="">
-                                    <input id="txtSearch" class="inputSearch" maxlength="45" type="text" value="" 
+                        <li id="  b_search_" class="box_search n_header_ search_ac">
+                            <form id="f_search_" action="">
+                                <div class=" ">
+                                    <input id="btnSearch" type="submit" class="b-search" value=""><input id="txtSearch" class="inputSearch" maxlength="45" type="text" value="" 
                                         placeholder="Tìm kiếm" autocomplete="off">
                                 </div>
                             </form>
                         </li>
-                        <li class="wrapper-button-vip">
+                        <li class="bt_vip_">
                             <a href="" title="Trang thanh toán">
                                 <div class="button-upgrade-item"></div>
                             </a>
                         </li>
-                        <li class="box-action-right">
+                        <li class="  ">
                             <a class="btn-upload" title="Upload" id="btnUserUpload"></a>
                         </li>
-                        <li id="box_user_login" class="header-user-profile-container">
-                            <div class="profile-login">Đăng nhập</div>
-                            <div class="profile-register">Đăng ký</div>
+                        <li id="box-user_lg" class=" ">
+                            <div class="p_lg">Đăng nhập</div>
+                            <div class="p_rg_">Đăng ký</div>
                         </li>
                     </ul>
                 </div>
@@ -2790,14 +2791,190 @@
 
     </div>
 
+    <div class="login-nct">
+        
+        <div class="light_"></div>
+        <div class="box_">
+            <div class="title_box_">
+                <div><a href="">Đăng nhập</a></div>
+                <div class="close_">X</div>
+            </div>
+            <div class="content_login">
+                <div>
+                    <form action="">
+                        <div class="hint_">
+                            Những thông tin có đánh dấu (<span style="color: #e74c3c;">*</span>) là bắt buộc nhập.
+                        </div>
+                        <div>
+                            <div class="label_">
+                                <div><label href="" >Tên đăng nhập <span style="color: #e74c3c;">*</span></label></div>
+                                <div><label href="">Mật khẩu<span style="color: #e74c3c;">*</span></label></div>
+                            </div>
+                            <div>
+                                <div class="user_name_lg">
+                                    <input type="text" id="us_lg" flag="in">
+                                </div>
+                                <div class="pass_lg">
+                                    <input type="text" id="pass_lg" flag="in">
+                                </div>
+                                <div class="check_pass_">
+                                    <div>
+                                        <input type="checkbox"  name="nho_pass" id="nho_pass">
+                                        <script> 
+                                        document.querySelectorAll("input[type='checkbox']")[0].checked = true;
+                                        </script>
+                                        <label for="nho_pass"  style="cursor: pointer; padding-left: 3px; font-weight: 200; color: rgba(0, 0, 0, 0.856);">Nhớ mật khẩu</label>
+                                    </div>
+                                    <div>
+                                        <a href="" style="color: #0689ba;">Quên mật khẩu ?</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Đăng nhập" class="lg_">
+                                </div>
+                            </div>
+                        </div>
+                        
 
-
+                    </form>
+                    <div class="register_">
+                        <div>Bạn chưa có tài khoản NCT ID?</div>
+                        <div>
+                            <label>
+                                <input type="button" value="ĐĂNG KÍ NGAY" id="dangky_">
+                            </label>                        
+                        </div>
+                        <div>
+                            <span></span> &ensp;Hoặc &ensp;<span></span>
+                        </div>
+                        <a href="" class="log_fb">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg" alt="">
+                            <div > Đăng nhập qua Facebook </div>
+                        </a>
+                        <a href="" class="log_google">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Google_plus_icon_%282013-2015%29.png" alt="">
+                            <div > Đăng nhập qua Google + </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dangky_box">
+        <div class="register-nct">
+            <div class="light_rg"></div>
+            <div class="box_register">
+                <div class="title_box_register">
+                    <div><a href="">Đăng ký</a></div>
+                    <div class="close_rg">X</div>
+                </div>
+                <div class="content_register">
+                    <div>
+                        <form action="">
+                            <div class="hint_">
+                                Những thông tin có đánh dấu (<span style="color: #e74c3c;">*</span>) là bắt buộc nhập.
+                            </div>
+                            <div>
+                                <div class="label_register">
+                                    <div><label href="" >Tên đăng nhập <span style="color: #e74c3c;">*</span></label>
+                                        <p class="goi_y">&nbsp;</p>
+                                    </div>
+                                    <div><label href="">Mật khẩu<span style="color: #e74c3c;">*</span></label>
+                                        <p class="goi_y">&nbsp;</p>
+                                    </div>
+                                    <div><label href="" >Nhập lại mật khẩu <span style="color: #e74c3c;">*</span></label>
+                                        <p class="goi_y">&nbsp;</p>
+                                    </div>
+                                    <div><label href="">Email<span style="color: #e74c3c;">*</span></label>
+                                        <p class="goi_y">&nbsp;</p>
+                                    </div>
+                                    <div><label href="">Mã xác nhận<span style="color: #e74c3c;">*</span></label></div>
+                                </div>
+                                <div id="container_content_rg">
+                                    <div class="user_name_rg">
+                                        <input type="text" id="us_rg" flag="in_rg" onblur="re_com('us_rg', 0, 4);" >
+                                        <p class="goi_y">Tên tài khoản tối thiểu 6 ký tự.</p>
+                                    </div>
+                                    <div class="pass_log">
+                                        <input type="password" id="pass_rg" flag="in_rg" onblur="re_com('pass_rg', 1, 5);">
+                                        <p class="goi_y">Mật khẩu tối thiểu 6 kí tự.</p>
+                                    </div>
+                                    <div class="confirm_pass">
+                                        <input type="password" id="cf_pass" flag="in_rg" onblur="re_com('cf_pass', 2, 6);">
+                                        <p class="goi_y">Mật khẩu nhập lại không thể rỗng.</p>
+                                    </div>
+                                    <div class="email_">
+                                        <input type="text" id="em_" flag="in_rg" onblur="re_com('em_', 3, 7);">
+                                        <p class="goi_y">Email không hợp lệ.</p>
+                                    </div>
+                                    <div class="pass_rg">
+                                        <div class="captcha_">
+                                            <label for="">
+                                                <input type="checkbox"  name="re_cap" id="re_cap">
+                                                <label for="re_cap">Tôi không phải là người máy</label>
+                                                <script> 
+                                                    document.querySelectorAll("input[name='re_cap']")[0].checked = false;
+                                                </script>
+                                            </label>
+                                            <label>
+                                                <img src="../image/recaptcha.png" alt="">
+                                                <p><a href="">Bảo mật</a> - <a href="">Điều khoản</a></p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="check_dk_">
+                                        <div>
+                                            <input type="checkbox"  name="nho_dk_" id="nho_dk_">
+                                            <script> 
+                                                document.querySelectorAll("input[id='nho_dk_']")[0].checked = true;
+                                            </script>
+                                            <label for="nho_dk_"  style="cursor: pointer; padding-left: 3px; font-size: 12px; font-weight: 500; color: rgba(0, 0, 0, 0.795);">Tôi đã đọc và đồng ý các điều kiện</label>
+                                        </div>
+                                        <div>
+                                            <a href="" style="color: #0689ba; font-size: 12px; font-weight: 500; ">Thỏa thuận sử dụng</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="submit" value="Đăng ký mới" class="rg_">
+                                    </div>
+                                </div>
+                            </div>
+                            
+    
+                        </form>
+                        <div class="register_">
+                            <div>Bạn đã có tài khoản NCT ID?</div>
+                            <div>
+                                <label>
+                                    <input type="button" value="ĐĂNG NHẬP NGAY" class="lg_123" id="dangnhap_">
+                                </label>                        
+                            </div>
+                            <div>
+                                <span></span> &ensp;Hoặc &ensp;<span></span>
+                            </div>
+                            <a href="" class="log_fb">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg" alt="">
+                                <div > Đăng nhập qua Facebook </div>
+                            </a>
+                            <a href="" class="log_google">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Google_plus_icon_%282013-2015%29.png" alt="">
+                                <div > Đăng nhập qua Google + </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/slideheader.js"></script>
     <script src="../js/slidefooter.js"></script>
+    <script src="../js/content_trangchu.js"></script>
+    <script src="../js/header.js"></script>
 </body>
 
 </html>

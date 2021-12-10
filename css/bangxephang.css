@@ -10,13 +10,16 @@
 	width: 90%;
 }
 #headermenu-box{
-	margin-left: -135px;
+	/* margin-left: -135px; */
 }
 .quocgia{
     display: flex;
     width: 100%;
-    background-color: lightgray;
+    background-color: #e5e5e5;
 	padding-bottom: 10px;
+}
+.material-icons {
+    color: #9f9f9f;
 }
 .quocgia ul{
     display: inline-flex;
@@ -117,12 +120,14 @@
 .tuan img{
 	width: 23px;
 }
-.hang{
-	display: flex;
+.hang {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
 }
 .boxmusic{
 	display: flex;
-	border-bottom: 2px solid lightgray;
+	border-bottom: 1px solid #dfdfdf;
 	justify-content: space-between;
 }
 .headmusic{
@@ -130,27 +135,27 @@
 }
 .pic img{
 	padding: 10px;
-	width: 130px;
+	width: 90px;
 }
 .hang ul li img{
 	width: 15px;
 }
 .hang ul{
 	padding: 23px 10px;
-	padding-top: 49px;
+	/* padding-top: 49px; */
 }
 .picname{
-	padding-top: 48px;
+	padding-top: 20px;
 }
 
 #hangg{
 	padding: 20px;
-	padding-top: 45px;
+	/* padding-top: 45px; */
 	color: red;
 	font-size: 30px;
 }
 .boxmusic:hover{
-	background-color: rgb(235,235,235);
+	background-color: #fafafa;
 }
 .iconan{
 	display: none;
@@ -214,3 +219,83 @@
 	width: 100%;
 }
 
+
+/* slider */
+
+.slider {
+    width: 85%;
+    margin: 0px auto;
+    height: 100px;
+}
+
+/* .slick-slide {
+  margin: 0px 20px;
+} */
+
+.slider_footer_{
+    background-color: #efefef;
+}
+
+.slider_footer_>div.upper{
+    padding-left: 7.5%;
+    font-size: 14px;
+    color: rgba(0,0,0,0.88);
+    padding-top: 16px;
+    font-weight: 800;
+    padding-bottom: 5px;
+
+}
+
+.slick-slide a {
+  padding: 0px;
+  display: block;
+  height: 100px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.slick-prev::before, .slick-next::before {
+    font-size: 60px !important;
+}
+.slick-prev, .slick-next {
+    width: 56px !important;
+    height: 56px !important;
+    /* background-color: red !important; */
+    z-index: 99;
+    top: 37px !important;
+}
+
+.slick-prev{
+    background-color: #2daaed !;
+}
+.slick-slide img{
+    width: 90%;
+    padding-left: 10%;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-track{
+    height: 100px;
+}
+
+.slick-current {
+  opacity: 1;
+}
+/* ====== */
+.slick-slide {
+    margin: 0 0px;
+    height: 100px;
+    opacity: 1;
+  }
+
+  
